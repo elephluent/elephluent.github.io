@@ -72,6 +72,9 @@ $(document).ready(() => {
       [
         "El gato es negro.",
         "La manzana es rojo.",
+        "El cielo es azul.",
+        "El césped es verde.",
+        "La ardilla es gris."
       ];
 
       // Use jquery to get objects
@@ -154,15 +157,15 @@ $(document).ready(() => {
 
     // Update user progress if the current module is the same as the
     // module the profile is currently working on
-    if(moduleName === profile.preferredProgress[0]) {
-        let formattedScore = Math.ceil(((numSent - numWrong) / numSent) * 100);
-        let formattedWrong = formatWrong(wrongSentences);
-        updateEmail(profile.username, moduleName, "Read the Sentence", formattedScore, formattedWrong, totalTime);
-        updateProgress("ReadTheSentence", profile, HOME_URL);
-    }
-    else {
+    // if(moduleName === profile.preferredProgress[0]) {
+    //     let formattedScore = Math.ceil(((numSent - numWrong) / numSent) * 100);
+    //     let formattedWrong = formatWrong(wrongSentences);
+    //     updateEmail(profile.username, moduleName, "Read the Sentence", formattedScore, formattedWrong, totalTime);
+    //     updateProgress("ReadTheSentence", profile, HOME_URL);
+    // }
+    // else {
       location.href=HOME_URL;
-    }
+    // }
   }
 });
 
@@ -263,8 +266,13 @@ function setupRecognition() {
           enableContinueButton();
         } else {
           updateQuestionProgressBar(1, 1);
+          disableContinueButton();
+          disableSkipButton();
           $micButton.css("display", "none");
           enableFinishButton();
+          setOverlay(true);
+          $("#continue").css("display", "block");
+          $("#continue").addClass("animated bounceIn");
         }
       disableSkipButton();
     }
