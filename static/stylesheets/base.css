@@ -130,7 +130,7 @@ h3,
 h4,
 h5,
 h6,
-p {
+.text p {
   font-family: "Muli", sans-serif;
   color: #606060;
 }
