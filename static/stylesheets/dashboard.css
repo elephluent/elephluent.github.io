@@ -126,6 +126,9 @@ header {
 #last-module {
   margin-top: 60px;
 }
+#last-module .module {
+  max-width: 375px;
+}
 
 #continue {
   padding-top: 1em;
@@ -152,7 +155,7 @@ main {
 
 .module {
   cursor: pointer;
-  max-width: 275px;
+  max-width: 300px;
 }
 
 .locked {

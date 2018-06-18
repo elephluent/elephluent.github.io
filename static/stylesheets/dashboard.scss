@@ -130,6 +130,9 @@ header {
 
 #last-module {
   margin-top: 60px;
+  .module {
+    max-width: 375px;
+  }
 }
 
 #continue {
