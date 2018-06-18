@@ -18,7 +18,8 @@ const colors = {
     "verde": "#65BF3B",
     "blanco": "#bababa",
     "gris": "#777",
-    "negro": "#333"
+    "negro": "#333",
+    "maron": "#8b4513"
 };
 
 // if not logged in and not about to login, redirect to home page

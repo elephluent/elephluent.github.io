@@ -25,11 +25,20 @@ let wrongWords = [];
 let numWrong = 0;
 
 let fitbMap
-= {'mi': ['Hola ', ' amigo', 'llamo', 'azul', 'El', 'mi'],
-    'dos': ['Las personas tienen ', ' manos', 'mi', 'dos', 'llamo', 'azul'],
-    'llamo': ['Me ', ' jj', 'dos', 'mi', 'llamo', 'El'],
-    'azul': ['El cielo es ', '', 'azul', 'dos', 'llamo', 'El'],
-    'El': ['', ' Sr. Vega es un hombre', 'mi', 'azul', 'llamo', 'El'] };
+= {'negro': ['El gato es ', '', 'negro', 'azul', 'verde', 'rojo', "https://i.pinimg.com/originals/0e/1e/8a/0e1e8ace2d78fe052f607aae724720e7.jpg"],
+    'rojo': ['Los zapatos son ', '', 'negro', 'morado', 'maron', 'rojo', "https://kindnessblogdotcom1.files.wordpress.com/2016/12/kck4z8xcj.png"],
+    'verde': ['El césped es ', '', 'azul', 'rosa', 'gris', 'verde', "https://clipart.info/images/ccovers/1520611248grass-png-cartoon.png"],
+    'azul': ['El cielo es ', '', 'azul', 'rosa', 'maron', 'naranja', "http://backgroundcheckall.com/wp-content/uploads/2017/12/cartoon-sky-background-.jpg"],
+    'gris': ['La ardilla es', '', 'gris', 'azul', 'rosa', 'naranja', "http://www.clker.com/cliparts/m/m/K/N/C/K/grey-squirrel-hi.png"] };
+
+    // data = //JSON.parse(responseJSON);
+    //   [
+    //     "El gato es negro.",
+    //     "La manzana es rojo.",
+    //     "El cielo es azul.",
+    //     "El césped es verde.",
+    //     "La ardilla es gris."
+    //   ];
 
 
 const correctSvg = "<div><i class='fas fa-check'></i></div>";
@@ -99,15 +108,15 @@ $(document).ready(() => {
     // }
 
     $("#startOver").on("click", function() {
-      if(moduleName === profile.preferredProgress[0]) {
-          let formattedScore = Math.ceil(((numSent - numWrong) / numSent) * 100);
-          let formattedWrong = formatWrong(wrongWords);
-          updateEmail(profile.username, moduleName, "Fill In The Blank", formattedScore, formattedWrong, totalTime);
-          updateProgress("FillInTheBlank", profile, "index.html");
-      }
-      else {
+      // if(moduleName === profile.preferredProgress[0]) {
+      //     let formattedScore = Math.ceil(((numSent - numWrong) / numSent) * 100);
+      //     let formattedWrong = formatWrong(wrongWords);
+      //     updateEmail(profile.username, moduleName, "Fill In The Blank", formattedScore, formattedWrong, totalTime);
+      //     updateProgress("FillInTheBlank", profile, "index.html");
+      // }
+      // else {
         location.href='index.html';
-      }
+      // }
     });
 
 });

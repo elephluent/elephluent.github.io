@@ -71,7 +71,7 @@ $(document).ready(() => {
       data = //JSON.parse(responseJSON);
       [
         "El gato es negro.",
-        "La manzana es rojo.",
+        "Los zapatos son rojos.",
         "El cielo es azul.",
         "El césped es verde.",
         "La ardilla es gris."

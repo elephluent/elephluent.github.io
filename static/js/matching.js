@@ -31,8 +31,8 @@ let wrongWords = [];
 const d = new Date();
 let startTime, endTime, totalTime;
 let translations
-= {'rojo': 'red', 'azul': 'blue', 'maron': 'brown', 'morado': 'purple',
-    'verde': 'green', 'amarillo': 'yellow', 'arananjado': 'orange', 'negro': 'black'};
+= {'rojo': 'red', 'azul': 'blue', 'marrón': 'brown', 'morado': 'purple',
+    'verde': 'green', 'amarillo': 'yellow', 'naranja': 'orange', 'negro': 'black'};
 
 const DEFAULT_COLOR = "white";
 const CORRECT_COLOR = "#49ad8c";
