@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elephluent</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/stylesheets/base.css">
+    <link rel="stylesheet" href="static/stylesheets/game.css">
+<link rel="stylesheet" href="static/stylesheets/fill-in-the-blank.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/base.js"></script>
+    <script src="static/js/language-codes.js"></script>
+    <script src="static/js/update-email.js"></script>
+    <link rel="shortcut icon" type="image/png" href="static/img/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js"></script>
+    <script src="static/js/fill-in-the-blank.js"></script>
+<script src="static/js/update-progress.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div id="name">
+        <div id="logo" class="scale-up" >
+            <a href="index.html"><img src="static/img/logo.png"></a>
+        </div>
+    </div>
+    <div id="account">
+    </div>
+</header>
+<main>
+       <div id="game-info">
+        <div class="text">
+            <h1 id="game-name">Fill In the Blank</h1>
+        </div>
+        <div class="text">
+            <h2 id="module-name"></h2>
+        </div>
+    </div>
+    <div id="game">
+        <div id="question">
+            <div>
+                <p>Select the box that corresponds to the correct word.</p>
+            </div>
+            <hr>
+            <div id="new-word">
+                <h1 id="sentence"></h1>
+            </div>
+            <div id="img_above">
+                <img id="sent_pic">
+            </div>
+        </div>
+        <div id="options">
+            <div class="option box scale-up" id="option-1">
+                <h3 id="choice1" class="word"></h3>
+            </div>
+            <div class="option box scale-up" id="option-2">
+                <h3 id="choice2" class="word"></h3>
+            </div>
+            <div class="option box scale-up" id="option-3">
+                <h3 id="choice3" class="word"></h3>
+            </div>
+            <div class="option box scale-up" id="option-4">
+                <h3 id="choice4" class="word"></h3>
+            </div>
+        </div>
+        <div id="next-div">
+            <button id="nextBtn" class="button btn-grey">Next</button>
+        </div>
+        <div id="overlay">
+            <div class="overlay-box" id="continue" align="center">
+                <div>
+                    <img src="static/img/good_job.jpg">
+                </div>
+                <h1>Congratulations! You filled all of the sentences in correctly.</h1>
+                <button id="startOver" class="button btn-grey">Continue</button>
+            </div>
+        </div>
+        <div id="continue">
+            <a id="continue-button" class="button btn-grey">Continue</a>
+        </div>
+    </div>
+
+</main>
+</body>
+
+</html>

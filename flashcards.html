@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elephluent</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/stylesheets/base.css">
+    <link rel="stylesheet" href="static/stylesheets/game.css">
+    <link rel="stylesheet" href="static/stylesheets/flashcards.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/base.js"></script>
+    <script src="static/js/language-codes.js"></script>
+    <script src="static/js/update-email.js"></script>
+    <link rel="shortcut icon" type="image/png" href="static/img/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js"></script>
+    <script src="static/js/flashcards.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="name">
+            <div id="logo" class="scale-up">
+                <a href="index.html"><img src="static/img/logo.png"></a>
+            </div>
+        </div>
+        <div id="account">
+        </div>
+    </header>
+    <main>
+        <div id="sidenav">
+            <div id="logo-container"></div>
+            <div id="progress">
+                <p><b>Progress</b></p>
+                <p id="prog"></p>
+                <progress id="prog_bar"></progress>
+            </div>
+            <div id="buttons">
+                <div>
+                    <button id="see_sent" class="button btn-grey">See the word in a sentence</button>
+                </div>
+                <div>
+                    <select id="first_selection" class="button btn-grey">>
+                        <option value="foreign_first">Show foreign first</option>
+                        <option value="eng_first">Show english first</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="shuffle" class="button btn-grey">
+                        <i class="fas fa-random"></i> Shuffle
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="cards">
+            <div id="instructions" align="center" class="text">
+                <p>Click the card to see the translation on the other side.</p>
+            </div>
+            <div class="box" id="flashcard" align="center">
+                <div>
+                    <h1 class="word" id="card" align="center" readonly></h1>
+                    <img id="card_pic" style="display: none">
+                    <p id="sent"></p>
+                </div>
+            </div>
+            <div>
+                <div id="next_prev">
+                    <button id="previous" class="button"><i class="fas fa-angle-left"></i></button>
+                    <button id="next" class="button"><i class="fas fa-angle-right"></i></button>
+                    <button id="speech-button" class="button">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+                <div id="keypress_instructions">
+                    <div class="keypress">
+                        <div class="keyboard-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div>
+                            <span>Next</span>
+                        </div>
+                    </div>
+                    <div class="keypress">
+                        <div class="keyboard-button">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <div>
+                            <span>Previous</span>
+                        </div>
+                    </div>
+                    <div class="keypress">
+                        <div class="keyboard-button">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="keyboard-button">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div>
+                            <span>Flip</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay">
+                <div class="overlay-box" id="continue" align="center">
+                    <div>
+                        <img src="static/img/good_job2.png">
+                    </div>
+                    <h1>Nice work! You completed this set!</h1>
+                    <button id="startOver" class="button btn-grey">Review again!</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

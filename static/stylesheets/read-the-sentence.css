@@ -1,0 +1,156 @@
+#game-name {
+  background-color: #2084c0;
+  color: white;
+}
+
+#module-name {
+  border-bottom: 5px solid #2084c0;
+}
+
+/*#words {*/
+  /*!*background-color: #eee;*!*/
+  /*border: 1px solid #ccc;*/
+/*}*/
+
+#btn-sent-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn-sent-div button {
+  display: flex;
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+}
+
+
+#mic-container {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mic-button {
+  color: white;
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mic-button:hover {
+  transform: translateY(4px);
+  transition: 0.1s transform;
+}
+
+#mic-button:active {
+  border-bottom: 0;
+  transform: translateY(8px);
+  transition: 0.4s background-color, 0.4s border-bottom;
+}
+
+.mic {
+   background-color: #2084c0;
+   border-bottom: 6px solid #196694;
+ }
+
+.mic:hover {
+  background-color: #1b74a9;
+  border-bottom: 4px solid #18608c;
+}
+
+.mic:active {
+  background-color: #18608c;
+}
+
+.stop {
+  background-color:#ff6f85;
+  border-bottom: 6px solid #ce596c;
+}
+
+.stop:hover {
+  background-color: #e76479;
+  border-bottom: 4px solid #ce596c;
+}
+
+.stop:active {
+  background-color: #ce596c;
+}
+
+.stop i {
+  font-size: 30px;
+}
+
+#spoken-words, #corrected-words {
+  min-height:50px;
+}
+
+#instruction {
+  text-align: center; }
+
+#continue {
+  display: none;
+  margin: 0 auto;
+}
+
+#skip {
+  /*padding-top: 3em;*/
+  text-align: center;
+  display: none; }
+
+#continue-container {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#continue-btn {
+  margin: 0 auto;
+}
+
+.transcript-text {
+  min-height: 70px;
+}
+
+#interim-transcript {
+  color: #bfbfbf;
+}
+
+.spacer {
+  margin-left: 10px;
+  margin-right:10px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  height:40px;
+  width:40px;
+}
+
+.correct {
+  min-height: 70px;
+  /* color: #70db70; */
+}
+
+.incorrect {
+  min-height: 70px;
+  /* color: #ff6666 */
+}
+
+#message {
+  color: #606060;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0;
+}
+
+#overlay img {
+  /*height: 350px;*/
+  width: 250px;
+}

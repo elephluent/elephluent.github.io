@@ -1,0 +1,52 @@
+body {
+  background: url("https://orig00.deviantart.net/b7d4/f/2013/257/0/3/nightmare_night_background_by_lt_fleur-d6m7h7c.png") no-repeat top center;
+  background-size: cover; }
+
+#game-name {
+  background-color: #8766d8;
+  color: white; }
+
+#module-name {
+  border-bottom: 5px solid #55448a; }
+
+#game {
+  flex: none; }
+
+#hide-seek {
+  position: relative;
+  width: 1000px; }
+  #hide-seek .area {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 700px; }
+  #hide-seek .object {
+    display: block;
+    position: absolute;
+    left: 300px;
+    bottom: 70px;
+    max-width: 50px; }
+
+#overlay {
+  display: flex;
+  align-items: center; }
+
+#info {
+  background-color: rgba(135, 102, 216, 0.5);
+  color: white;
+  padding: 2em;
+  max-width: 30em;
+  border-radius: 5px; }
+  #info h1, #info h2, #info h3, #info h4, #info h5, #info h6 {
+    color: white; }
+  #info img {
+    max-width: 100%;
+    max-height: 25em;
+    display: block;
+    margin: 0 auto; }
+  #info .secondary {
+    color: #cccccc;
+    background-color: Transparent;
+    border: 0; }

@@ -1,0 +1,235 @@
+body {
+    max-width: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background-color: transparentize(black, 0.75);
+}
+
+#cards {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#flashcard {
+    //padding: 10%;
+    //width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    padding: 1em 0;
+    margin-top: 30px;
+    width: 500px;
+    height: 280px;
+    //margin-left: 20%;
+
+    h1 {
+        margin-top: 0;
+    }
+}
+
+#card_pic {
+    height: 150px;
+    //width: 150px;
+}
+
+/* The sidebar menu */
+#sidenav {
+    //padding-top: 150px;
+    //height: 100%; /* Full-height: remove this if you want "auto" height */
+    //width: 215px; /* Set the width of the sidebar */
+    background-color: transparentize(#bfe5ea, 0.1);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 1em;
+    /*padding-top: 20px;*/
+}
+
+/* The navigation menu links */
+#sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+#sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#next_prev {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    button {
+
+    }
+}
+
+#prog {
+    font-size: 20pt;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#prog_bar {
+    width: 150px;
+}
+
+#buttons div {
+    margin-top: 10px;
+}
+
+.overlay-box {
+    padding: 1.5em 1em;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+#logo {
+    left: 30px;
+    z-index: 1;
+}
+
+#keypress_instructions {
+    background-color: white;
+}
+
+.keypress {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+.keyboard-button {
+    border: 3px solid #ccc;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    i {
+        color: #aaa;
+    }
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+
+#logo {
+    position: static;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    #sidenav {
+        display: flex;
+        justify-content: center;
+    }
+    #progress {
+        padding: 1em
+    }
+    #cards {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 535px) {
+    #flashcard {
+        width: 90%;
+        height: 175px;
+        h1 {
+            font-size: 25px;
+        }
+    }
+    #card_pic {
+        height: 100px;
+    }
+    #sidenav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elephluent</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/stylesheets/base.css">
+    <link rel="stylesheet" href="static/stylesheets/picture-learning.css">
+<link rel="stylesheet" href="static/stylesheets/game.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/base.js"></script>
+    <script src="static/js/language-codes.js"></script>
+    <script src="static/js/update-email.js"></script>
+    <link rel="shortcut icon" type="image/png" href="static/img/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js"></script>
+    <script src="static/js/picture-learning.js"></script>
+<script src="static/js/update-progress.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div id="name">
+        <div id="logo" class="scale-up" >
+            <a href="index.html"><img src="static/img/logo.png"></a>
+        </div>
+    </div>
+    <div id="account">
+    </div>
+</header>
+<main>
+       <div id="game-info">
+        <div class="text">
+            <h1 id="game-name">Picture Learning</h1>
+        </div>
+        <div class="text">
+            <h2 id="module-name"></h2>
+        </div>
+    </div>
+    <div id="game">
+        <div id="prog-container">
+            <div id="progress-bg"></div>
+            <div id="question-progress" class="progress-bar"></div>
+            <div id="score-progress" class="progress-bar"></div>
+        </div>
+        <div id="question">
+            <div>
+                <p>Select the box that corresponds to the correct word.</p>
+            </div>
+            <hr>
+            <div id="new-word">
+
+            </div>
+        </div>
+        <div id="options">
+        </div>
+        <div id="continue-container">
+            <button id="continue" class="button btn-grey">Continue</button>
+            <button id="finish" class="button btn-grey">Finish</button>
+        </div>
+
+        <div id="overlay">
+            <div class="overlay-box" id="continue-overlay" align="center">
+                <div>
+                    <img src="static/img/good_job2.png">
+                </div>
+                <h1>Congratulations! You learned all of the words!</h1>
+                <a id="continue-button" class="button btn-grey" >Continue</a>
+            </div>
+            <div class="overlay-box" id="redo" align="center">
+                <h1>Unfortunately, you got less than 50% of the questions correct</h1>
+                <a id="start-over-button" class="button btn-grey" >Start over</a>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+</body>
+
+</html>

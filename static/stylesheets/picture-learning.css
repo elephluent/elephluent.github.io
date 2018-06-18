@@ -1,0 +1,77 @@
+#game-name {
+  background-color: #ffb605;
+  color: white; }
+
+#module-name {
+  border-bottom: 5px solid #ffb605; }
+
+#new-word {
+  margin: 1em 0;
+  text-align: center;
+  background-color: white; }
+  #new-word h1 {
+    font-size: 36pt;
+    margin: 0; }
+  #new-word img {
+    max-width: 12em; }
+
+#instruction {
+  text-align: center; }
+
+#options {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #options .option {
+    background-color: white;
+    width: 214px;
+    font-family: "Muli", "Arial", sans-serif;
+    display: block;
+    padding: 1em 0;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20pt;
+    text-align: center; }
+    #options .option h3 {
+      margin: 0;
+      margin-bottom: 0.5em; }
+    #options .option img {
+      max-width: 200px;
+      max-height: 115px; }
+  #options .option:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    transition: 0.4s box-shadow; }
+
+.correct {
+  color: #65BF3B; }
+
+.wrong {
+  color: #ff6f85; }
+
+#option-0 {
+  border-bottom: 15px solid #ff6f85;
+  transition: border-bottom 0.4s; }
+
+#option-1 {
+  border-bottom: 15px solid #44A5DC;
+  transition: border-bottom 0.4s; }
+
+#option-2 {
+  border-bottom: 15px solid #FFC200;
+  transition: border-bottom 0.4s; }
+
+#option-3 {
+  border-bottom: 15px solid #65BF3B;
+  transition: border-bottom 0.4s; }
+
+#continue-container {
+  padding-top: 3em;
+  text-align: center; }
+
+#continue,
+#finish {
+  display: none; }
+
+#continue {
+  margin: 0 auto; }

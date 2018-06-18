@@ -1,0 +1,104 @@
+#game-name {
+    background-color: #88b447;
+    color: white;
+}
+
+#module-name {
+    border-bottom: 5px solid #88b447;
+}
+
+#new-word {
+    margin: 1em 0;
+    padding: 1em 3em;
+    text-align: center; }
+#new-word h1 {
+    font-size: 36pt;
+    margin: 0; }
+
+#instruction {
+    text-align: center; }
+
+#input-box {
+    font-size: 36pt;
+    width: 200pt;
+}
+
+#img_above {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#sent_pic {
+    /*width: 150px;*/
+    height: 150px;
+}
+
+#options {
+    padding: 1em 0;
+    display: flex; }
+
+#options {
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+#options .option {
+    display: block;
+
+    width: 218px;
+    padding: 1em 0;
+    margin: 10px;
+
+    border: 0;
+    cursor: pointer;
+    font-size: 20pt;
+    text-align: center; }
+#options .option h3 {
+    color: white;
+    margin: 0;
+    margin-bottom: 0.5em; }
+#options .option img {
+    max-width: 200px;
+    max-height: 115px; }
+#options .option:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    transition: 0.4s box-shadow; }
+
+#option-1 {
+    background-color: #FF3859; }
+
+#option-1:hover {
+    background-color: #ff052e; }
+
+#option-2 {
+    background-color: #44A5DC; }
+
+#option-2:hover {
+    background-color: #258dc8; }
+
+#option-3 {
+    background-color: #FFC200; }
+
+#option-3:hover {
+    background-color: #cc9b00; }
+
+#option-4 {
+    background-color: #65BF3B; }
+
+#option-4:hover {
+    background-color: #50982f; }
+
+#continue {
+    padding-top: 3em;
+    text-align: center;
+    display: none; }
+
+#congrats-div {
+    text-align: center;
+}
+
+#next-div {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+}

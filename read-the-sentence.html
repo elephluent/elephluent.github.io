@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elephluent</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/stylesheets/base.css">
+    <link rel="stylesheet" href="static/stylesheets/game.css">
+<link rel="stylesheet" href="static/stylesheets/read-the-sentence.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/base.js"></script>
+    <script src="static/js/language-codes.js"></script>
+    <script src="static/js/update-email.js"></script>
+    <link rel="shortcut icon" type="image/png" href="static/img/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js"></script>
+    <script src="static/js/jquery.color-2.1.2.min.js"></script>
+<script src="static/js/read-the-sentence.js"></script>
+<script src="static/js/update-progress.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div id="name">
+        <div id="logo" class="scale-up" >
+            <a href="index.html"><img src="static/img/logo.png"></a>
+        </div>
+    </div>
+    <div id="account">
+    </div>
+</header>
+<main>
+   <div id="game-info">
+    <div class="text">
+        <h1 id="game-name">Read the Sentence</h1>
+    </div>
+    <div class="text">
+        <h2 id="module-name"></h2>
+    </div>
+</div>
+<div id="game">
+    <div id="prog-container">
+        <div id="progress-bg"></div>
+        <div id="question-progress" class="progress-bar"></div>
+        <div id="score-progress" class="progress-bar"></div>
+    </div>
+    <div id="question">
+        <div>
+            <p>Press the microphone and read the sentence back to us!</p>
+        </div>
+        <hr>
+        <div>
+            <div id="btn-sent-div">
+                <button id="hear-sent" class="button btn-grey">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <h1 id="sentence"></h1>
+            </div>
+            <hr>
+            <div id="words">
+                <h1 id="spoken-words">
+                    <span id="final-transcript" class="transcript-text"></span>
+                    <span id="interim-transcript" class="transcript-text"></span>
+                </h1>
+                <h1 id="corrected-words" style="display:none"></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="mic-container">
+        <div id="mic-button" class="mic">
+            <i class="fas fa-microphone"></i>
+        </div>
+    </div>
+
+    <div id="message">
+        <p id="message-text"></p>
+    </div>
+
+    <div id="overlay">
+        <div class="overlay-box" id="continue" align="center">
+            <div>
+                <img src="static/img/good_job3.png">
+            </div>
+            <h1>Congratulations! You successfully completed the lesson!</h1>
+            <button id="finish" class="button btn-grey">Finish</button>
+        </div>
+    </div>
+
+    <div id="continue-container">
+        <button id="continue-btn" class="button btn-grey">Continue</button>
+    </div>
+    <div id="skip">
+        <a class="button btn-grey">Skip</a>
+    </div>
+</div>
+
+</main>
+</body>
+
+</html>

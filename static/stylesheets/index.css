@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(#e6fdfb, #f4fefd);
+  max-width: none; }
+
+header {
+  padding: 10px 20px;
+  align-items: flex-start; }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  padding-bottom: 5em;
+  text-align: center;
+  height: 100%; }
+
+#elephant, #sign-up {
+  padding: 0 2em;
+  margin: 0 1em; }
+
+#login {
+  justify-content: flex-end; }
+  #login .button {
+    font-size: 12pt; }
+
+img {
+  max-width: 100%;
+  width: 30em; }
+
+#sign-up {
+  padding-bottom: 5em; }
+  #sign-up h1 {
+    font-size: 36pt;
+    margin: 15px 0; }
+  #sign-up button {
+    padding: 0.5em 1em;
+    margin: 1em;
+    font-size: 16pt;
+    width: 8em; }
+
+#logo, #account {
+  position: static;
+  padding: 10px; }
+
+#account {
+  flex-direction: row;
+  color: black; }
+
+#logo img {
+  width: 75px; }
+
+@media (max-width: 761px) {
+  main {
+    flex-direction: column; }
+  #elephant {
+    max-width: 250px; } }
+
+@media (max-width: 362px) {
+  #account {
+    flex-direction: column; } }

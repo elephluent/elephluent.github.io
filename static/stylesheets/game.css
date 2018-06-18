@@ -1,0 +1,93 @@
+body {
+  background: url("https://i.imgur.com/sN1FYEr.png") no-repeat top center;
+  background-size: cover; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1em 2em;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+#game-info {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap; }
+
+#game-name {
+  font-size: 32pt; }
+
+#module-name {
+  font-size: 24pt;
+  margin: 20px 0 10px 20px; }
+
+#game {
+  flex: 1 auto; }
+
+#question {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: white;
+  border-bottom: 5px solid #ccc;
+  text-align: center; }
+  #question hr {
+    max-width: 400px;
+    border-top: 1px solid #ddd; }
+
+.text {
+  display: flex; }
+  .text h1, .text h2, .text p {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0; }
+
+#prog-container {
+  padding: 1em 1em 0 1em; }
+
+.progress-bar {
+  transition: 0.4s width; }
+
+#question-progress {
+  background: linear-gradient(90deg, #b9b9b9, rgba(170, 187, 170, 0.733333));
+  height: 7px;
+  width: 0;
+  margin-top: -5px;
+  z-index: 1;
+  border-radius: 8px; }
+
+#score-progress {
+  background: linear-gradient(90deg, #63c9da, #44A5DC);
+  height: 7px;
+  width: 0;
+  margin-top: -7px;
+  z-index: 1;
+  border-radius: 8px; }
+
+#progress-bg {
+  background-color: #ccc;
+  height: 2px; }
+
+#finish {
+  display: none;
+  margin: 0 auto; }
+
+@media (max-width: 740px) {
+  #module-name {
+    margin-left: 0; } }
+
+@media (max-width: 1378px) {
+  #logo, #account {
+    position: static;
+    padding: 10px; }
+  #account {
+    flex-direction: row;
+    color: black; }
+  #logo img {
+    width: 75px; }
+  header {
+    align-items: flex-start;
+    background-color: rgba(234, 234, 234, 0.75); } }
+
+@media (max-width: 362px) {
+  #account {
+    flex-direction: column; } }

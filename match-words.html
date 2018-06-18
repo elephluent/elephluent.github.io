@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elephluent</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/stylesheets/base.css">
+    <link rel="stylesheet" href="static/stylesheets/matching.css">
+<link rel="stylesheet" href="static/stylesheets/game.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="static/stylesheets/animate.css">
+<style>
+    .grid-container {
+        horiz-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        grid-gap: 20px 30px;
+    }
+    .grid-item {
+        /*border: 30px solid rgba(0, 0, 0, 0.8);*/
+        /*background-color: rgba(66, 255, 76, 0.8);*/
+        padding: 20px;
+        font-size: 25px;
+        text-align: center;
+        border-bottom: 8px solid #49ad8c;;
+    }
+</style>
+
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/base.js"></script>
+    <script src="static/js/language-codes.js"></script>
+    <script src="static/js/update-email.js"></script>
+    <link rel="shortcut icon" type="image/png" href="static/img/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js"></script>
+    <script src="static/js/matching.js"></script>
+<script src="static/js/update-progress.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div id="name">
+        <div id="logo" class="scale-up" >
+            <a href="index.html"><img src="static/img/logo.png"></a>
+        </div>
+    </div>
+    <div id="account">
+    </div>
+</header>
+<main>
+   <div id="game-info">
+    <div class="text">
+        <h1 id="game-name">Matching Word to Word</h1>
+    </div>
+    <div class="text">
+        <h2 id="module-name"></h2>
+    </div>
+</div>
+<div id="game">
+    <div id="instruction" class="text">
+        <p>Select the boxes that correspond to each other.</p>
+    </div>
+    <div id="board" class="grid-container">
+
+    </div>
+</div>
+<div id="overlay">
+    <div class="overlay-box" id="continue" align="center">
+        <div>
+            <img src="static/img/good_job3.png">
+        </div>
+        <h1>Congratulations! You've matched all of the words correctly!</h1>
+        <a id="continue-button" class="button btn-grey" >Continue</a>
+    </div>
+</div>
+
+</main>
+</body>
+
+</html>
