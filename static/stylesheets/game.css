@@ -71,22 +71,44 @@ main {
   display: none;
   margin: 0 auto; }
 
-@media (max-width: 740px) {
-  #module-name {
-    margin-left: 0; } }
-
 @media (max-width: 1378px) {
   #logo, #account {
     position: static;
-    padding: 10px; }
+    padding: 0 5px;
+    padding-top: 5px; }
+  #new-word h1 {
+    font-size: 24pt; }
   #account {
     flex-direction: row;
     color: black; }
   #logo img {
-    width: 75px; }
+    width: 50px; }
   header {
     align-items: flex-start;
-    background-color: rgba(234, 234, 234, 0.75); } }
+    background-color: rgba(255, 255, 255, 0.8); }
+  main {
+    padding: 0 1em; }
+  #game-name {
+    font-size: 20pt; }
+  #module-name {
+    font-size: 14pt; }
+  #question {
+    margin-top: 1em;
+    padding: 5px; }
+    #question p {
+      font-size: 10pt; }
+  #options .option {
+    width: 35vw !important; }
+    #options .option h3 {
+      font-size: 14pt; }
+    #options .option img {
+      max-width: 100px;
+      max-height: 60px; }
+  #continue-container {
+    padding-top: 0;
+    padding-bottom: 1em; }
+  .option .fas {
+    display: none; } }
 
 @media (max-width: 362px) {
   #account {

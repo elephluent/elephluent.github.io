@@ -1,0 +1,28 @@
+{
+  "name": "elephluent",
+  "version": "1.0.0",
+  "description": "Frontend for the elephluent project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "./static/bin/build-css",
+    "watch-css": "./static/bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs032-2018/s18-dnguye40-kmashiki-sramasw1-tjiang12.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs032-2018/s18-dnguye40-kmashiki-sramasw1-tjiang12/issues"
+  },
+  "homepage": "https://github.com/cs032-2018/s18-dnguye40-kmashiki-sramasw1-tjiang12#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "dependencies": {}
+}

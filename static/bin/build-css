@@ -1,0 +1,8 @@
+node-sass --include-path scss static/stylesheets/base.scss static/stylesheets/base.css
+node-sass --include-path scss static/stylesheets/index.scss static/stylesheets/index.css
+node-sass --include-path scss static/stylesheets/dashboard.scss static/stylesheets/dashboard.css
+node-sass --include-path scss static/stylesheets/picture-learning.scss static/stylesheets/picture-learning.css
+node-sass --include-path scss static/stylesheets/hide-and-seek.scss static/stylesheets/hide-and-seek.css
+node-sass --include-path scss static/stylesheets/game.scss static/stylesheets/game.css
+node-sass --include-path scss static/stylesheets/matching.scss static/stylesheets/matching.css
+node-sass --include-path scss static/stylesheets/flashcards.scss static/stylesheets/flashcards.css

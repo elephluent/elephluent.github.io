@@ -7,14 +7,6 @@
     border-bottom: 5px solid #88b447;
 }
 
-#new-word {
-    margin: 1em 0;
-    padding: 1em 3em;
-    text-align: center; }
-#new-word h1 {
-    font-size: 36pt;
-    margin: 0; }
-
 #instruction {
     text-align: center; }
 
