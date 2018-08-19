@@ -211,6 +211,7 @@ hr {
     height: 90vh;
     overflow-y: scroll; }
   #lessons .lesson {
+    padding: 10px 0;
     width: initial;
     max-width: 500px; }
   #HideAndSeek {
