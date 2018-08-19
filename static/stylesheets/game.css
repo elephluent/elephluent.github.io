@@ -85,7 +85,8 @@ main {
     width: 50px; }
   header {
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 1em; }
   main {
     padding: 0 1em; }
   #game-name {
