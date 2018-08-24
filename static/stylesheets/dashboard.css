@@ -6,7 +6,7 @@ body, html {
   padding: 0; }
 
 #background {
-  background: url("https://i.imgur.com/UISUY2y.jpg") no-repeat bottom center;
+  background: url("../img/dashboard-bg.jpg") no-repeat bottom center;
   background-size: cover;
   min-height: 600px;
   padding: 1em;
