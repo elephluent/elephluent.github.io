@@ -3,44 +3,42 @@ $(document).ready(() => {
     let username = $("#regUsername").val();
     let password = $("#regPassword").val();
     let email = $("#regEmail").val();
-    let language = $('input[name=language]:checked', '#registerForm').val();
+    let language = $("input[name=language]:checked", "#registerForm").val();
 
-    password = CryptoJS.enc.Hex.stringify( CryptoJS.SHA1(password, "string"));
+    password = CryptoJS.enc.Hex.stringify(CryptoJS.SHA1(password, "string"));
 
     let req = {
       username: username,
       password: password,
-      email   : email,
+      email: email,
       language: language
-    }
+    };
     $.post("/user/register", req, responseJSON => {
       let data = JSON.parse(responseJSON);
 
-      if(data.error) {
+      if (data.error) {
         alert(data.error);
-      }
-      else {
+      } else {
         alert(data.success);
 
         req = {
-            username: username,
-            email: email
-        }
+          username: username,
+          email: email
+        };
         $.post("/user/welcome", req, responseJSON => {
-            let data = JSON.parse(responseJSON);
+          let data = JSON.parse(responseJSON);
         });
 
         req = {
           username: username,
           password: password
-        }
+        };
         $.post("/user/login", req, responseJSON => {
           let data = JSON.parse(responseJSON);
 
-          if(data.error) {
+          if (data.error) {
             alert(data.error);
-          }
-          else {
+          } else {
             window.localStorage.setItem("profile", JSON.stringify(data));
             window.location = "/dashboard";
           }
@@ -50,57 +48,54 @@ $(document).ready(() => {
     });
   });
   $(document).keypress(function(event) {
-    if(event.which == 13) {
-        let username = $("#regUsername").val();
-        let password = $("#regPassword").val();
-        let email = $("#regEmail").val();
-        let language = $('input[name=language]:checked', '#registerForm').val();
+    if (event.which == 13) {
+      let username = $("#regUsername").val();
+      let password = $("#regPassword").val();
+      let email = $("#regEmail").val();
+      let language = $("input[name=language]:checked", "#registerForm").val();
 
-        password = CryptoJS.enc.Hex.stringify( CryptoJS.SHA1(password, "string"));
+      password = CryptoJS.enc.Hex.stringify(CryptoJS.SHA1(password, "string"));
 
-        let req = {
+      let req = {
+        username: username,
+        password: password,
+        email: email,
+        language: language
+      };
+      $.post("/user/register", req, responseJSON => {
+        let data = JSON.parse(responseJSON);
+
+        if (data.error) {
+          alert(data.error);
+        } else {
+          alert(data.success);
+
+          req = {
             username: username,
-            password: password,
-            email   : email,
-            language: language
-        }
-        $.post("/user/register", req, responseJSON => {
+            email: email
+          };
+          $.post("/user/welcome", req, responseJSON => {
+            let data = JSON.parse(responseJSON);
+          });
+
+          req = {
+            username: username,
+            password: password
+          };
+          $.post("/user/login", req, responseJSON => {
             let data = JSON.parse(responseJSON);
 
-            if(data.error) {
-                alert(data.error);
+            if (data.error) {
+              alert(data.error);
+            } else {
+              window.localStorage.setItem("profile", JSON.stringify(data));
+              window.location = "/dashboard";
             }
-            else {
-                alert(data.success);
+          });
 
-                req = {
-                    username: username,
-                    email: email
-                }
-                $.post("/user/welcome", req, responseJSON => {
-                    let data = JSON.parse(responseJSON);
-                });
-
-                req = {
-                    username: username,
-                    password: password
-                }
-                $.post("/user/login", req, responseJSON => {
-                    let data = JSON.parse(responseJSON);
-
-                    if(data.error) {
-                        alert(data.error);
-                    }
-                    else {
-                        window.localStorage.setItem("profile", JSON.stringify(data));
-                        window.location = "/dashboard";
-                    }
-                });
-
-
-                window.localStorage.setItem("profile", JSON.stringify(data));
-            }
-        });
+          window.localStorage.setItem("profile", JSON.stringify(data));
         }
-    });
+      });
+    }
+  });
 });
