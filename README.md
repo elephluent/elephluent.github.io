@@ -13,7 +13,9 @@
 
 We wanted to design a website to help children aged 5-12 learn new languages. Especially today, knowing more than one language is an essential skill in any setting. We want to enable the next generation to gain such abilities while doing so in a playful manner to keep children engaged and willing to learn.
 
-![elephluent dashboard with module information](https://github.com/elephluent/elephluent.github.io/blob/master/static/img/screenshots/dashboard.png)
+<a href="https://elephluent.github.io">
+  <img alt="elephluent dashboard with module information" src="https://github.com/elephluent/elephluent.github.io/blob/master/static/img/screenshots/dashboard.png">
+</a>
 <p align="center">
   <i>The dashboard for a child learning Spanish.</i>
 </p>
@@ -34,7 +36,9 @@ Our methodology focuses on learning new words through a series of **modules** (e
 6. **Fill in the Blank**
     * Test your knowledge by filling in a foreign sentence with the correct word.
 
-![lessons with lesson information](https://github.com/elephluent/elephluent.github.io/blob/master/static/img/screenshots/lessons.png)
+<a href="https://elephluent.github.io">
+  <img alt="lessons with lesson information" src="https://github.com/elephluent/elephluent.github.io/blob/master/static/img/screenshots/lessons.png">
+</a>
 <p align="center">
   <i>The six lessons which make up each module.</i>
 </p>
