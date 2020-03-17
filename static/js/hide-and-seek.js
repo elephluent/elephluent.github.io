@@ -64,6 +64,7 @@ $(document).ready(() => {
 
   //Create a Pixi Application
   let app = new Application({ width: 900, height: 600 });
+  console.log(PIXI.display);
   let stage = (app.stage = new PIXI.display.Stage());
 
   light = new PIXI.lights.PointLight(0xffffff, 1);
@@ -214,9 +215,7 @@ function displayObjectInfo() {
   info.html("");
   info.append(`
         <h1>${correctObject.name}</h1>
-        <img src="${correctObject.image}" alt="${
-    correctObject.name
-  }" class="scale-up">
+        <img src="${correctObject.image}" alt="${correctObject.name}" class="scale-up">
         <p>${correctObject.desc}</p>
         <button id="back" class="button">Back</a>
     `);
