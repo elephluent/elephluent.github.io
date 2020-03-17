@@ -1,5 +1,45 @@
-# Elephluent 
+<h1 align="center">
+  <br>
+  <a href="https://elephluent.github.io"><img alt="elephluent logo" width="150" src="https://github.com/elephluent/elephluent.github.io/blob/master/static/img/logo.svg"></a>
+  <br>
+  elephluent
+  <br>
+</h1>
 
-**Team Members:** Dat-Thanh Nguyen, Kristen Mashikian, Shekar Ramaswamy, Tyler Jiang
+<p align="center">
+  <b>A language-learning website for children.</b>
+</p>
+<p align="center">Dat-Thanh Nguyen, Kristen Mashikian, Shekar Ramaswamy, Tyler Jiang</p>
 
-We want to design a website to help people of all ages (but especially children aged 5-12) learn new languages. Especially today, knowing more than one language is an essential skill in any setting. We want to enable the next generation to gain such abilities while doing so in a playful manner to keep children engaged and willing to learn. 
+We wanted to design a website to help children aged 5-12 learn new languages. Especially today, knowing more than one language is an essential skill in any setting. We want to enable the next generation to gain such abilities while doing so in a playful manner to keep children engaged and willing to learn.
+
+![elephluent dashboard with module information](https://github.com/elephluent/elephluent.github.io/blob/master/static/img/screenshots/dashboard.png)
+<p align="center">
+  <i>The dashboard for a child learning Spanish.</i>
+</p>
+
+## Features
+
+Our methodology focuses on learning basic concepts through a series of **modules** (e.g. Colors, Pronouns, Family, and Phrases). Each module will contain six lessons, which are as follows:
+1. **Picture Learning**
+    * Learn the language by using an English word to select the corresponding image and foreign word.
+2. **Matching Word to Word**
+    * Matching game of foreign words to their corresponding English words.
+3. **Matching Word to Image**
+    * Matching game of foreign words to their corresponding images.
+4. **Read the Sentence**
+    * Work on your pronunciation by reading out the sentence and receiving feedback on it.
+5. **Hide and Seek**
+    * Learn about cultural objects through a game of Hide and Seek!
+6. **Fill in the Blank**
+    * Test your knowledge by filling in a foreign sentence with the correct word.
+
+![lessons with lesson information](https://github.com/elephluent/elephluent.github.io/blob/master/static/img/screenshots/lessons.png)
+<p align="center">
+  <i>The six lessons which make up each module.</i>
+</p>
+
+## Notes
+* This repo contains a demo for the front-end, which currently only contains the Spanish colors module.
+  * To play the Hide and Seek game locally, you will need to run the elephluent demo on an [HTTP server](https://www.npmjs.com/package/http-server).
+* Our logo is a modified version of Freepik's [free elephant icon](https://www.flaticon.com/free-icon/elephant_375060?term=elephant&page=1&position=8). Credits to the original author.
