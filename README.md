@@ -20,7 +20,7 @@ We wanted to design a website to help children aged 5-12 learn new languages. Es
 
 ## Features
 
-Our methodology focuses on learning basic concepts through a series of **modules** (e.g. Colors, Pronouns, Family, and Phrases). Each module will contain six lessons, which are as follows:
+Our methodology focuses on learning new words through a series of **modules** (e.g. Colors, Pronouns, Family, and Phrases). Each module will contain six lessons, which are as follows:
 1. **Picture Learning**
     * Learn the language by using an English word to select the corresponding image and foreign word.
 2. **Matching Word to Word**
