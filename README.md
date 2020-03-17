@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  <b>A language-learning website for children.</b>
+  <b>A language-learning website for kids.</b>
 </p>
 <p align="center">Dat-Thanh Nguyen, Kristen Mashikian, Shekar Ramaswamy, Tyler Jiang</p>
 
