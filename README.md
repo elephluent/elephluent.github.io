@@ -46,4 +46,8 @@ Our methodology focuses on learning new words through a series of **modules** (e
 ## Notes
 * This repo contains a demo for the front-end, which currently only contains the Spanish colors module.
   * To play the Hide and Seek game locally, you will need to run the elephluent demo on an [HTTP server](https://www.npmjs.com/package/http-server).
+
+## Attributions
 * Our logo is a modified version of Freepik's [free elephant icon](https://www.flaticon.com/free-icon/elephant_375060?term=elephant&page=1&position=8). Credits to the original author.
+* Background for dashboard is from [PPTGrounds](https://www.pptgrounds.com/nature/8373-nature-cartoon-backgrounds).
+* Assets are largely stock images modified for the purposes of creating our school project. If you'd like to see further attributions, please contact me. This project is not used for any commercial purposes.
